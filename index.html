@@ -901,6 +901,9 @@ var ting=false;
         if(ting_num>5){
           TweenMax.killTweensOf($("#left_hand"))
           TweenMax.to($("#left_hand"), 3, {rotation:"-180deg",y:600,opacity:0,transformOrigin:'100% 100%', yoyo:true, ease:Sine.easeOut});
+					setTimeout(function(){
+						window.location.reload();
+					},21131);
         }
         clear_scroll();
         tween_left.play();
